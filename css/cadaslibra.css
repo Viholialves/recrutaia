@@ -1,0 +1,84 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B; /* Cor única para toda a tela */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ajusta para colocar a logo mais acima */
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-top: 20px; /* Espaço adicional no topo */
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+    align-self: flex-start;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+/* Estilo da logo */
+.logo {
+    max-width: 400px; /* Aumenta o tamanho da logo */
+    margin-bottom: 10px; /* Reduz o espaço abaixo da logo */
+}
+
+/* Estilo do título */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para o formulário */
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Reduz a largura dos campos */
+    max-width: 400px; /* Ajusta para não ocupar toda a tela */
+}
+
+/* Estilo dos grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+    color: #333;
+}
+
+/* Estilo do botão Próximo */
+.next-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4B00E0; /* Cor roxa destacada */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Aumenta a distância do botão em relação ao formulário */
+}
+
+.next-button:hover {
+    background-color: #3700b3;
+}

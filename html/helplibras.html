@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta - Help Center</title>
+    <link rel="stylesheet" href="../css/helpnormal.css">
+</head>
+
+<body>
+     <!-- Vlibras -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Sidebar com logo e menu -->
+    <aside class="sidebar">
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="sidebar-logo">
+        <nav class="menu">
+            <a href="cursoslibras.html" class="menu-item"><img src="../img-video/home.png" alt="Página inicial" class="menu-icon"> Página inicial</a>
+            <a href="../html/helplibras.html" class="menu-item"><img src="../img-video/help.png" alt="Help center" class="menu-icon"> Help center</a>
+            <a href="trabalhoslibras.html" class="menu-item"><img src="../img-video/bolsa.png" alt="Empregos" class="menu-icon"> Empregos</a>
+            <a href="publicarlibras.html" class="menu-item"><img src="../img-video/publicarico.png" alt="Publicar" class="menu-icon"> Publicar</a>
+            <a href="cursoslibras.html" class="menu-item"><img src="../img-video/cursosico.png" alt="Cursos" class="menu-icon"> Cursos</a>
+            <a href="configulibras.html" class="menu-item"><img src="../img-video/confi.png" alt="Configurações" class="menu-icon"> Configurações</a>
+        </nav>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Header com barra de navegação -->
+        <header class="header">
+            <input type="text" placeholder="Digite o que deseja encontrar" class="search-bar">
+            <div class="header-icons">
+                <img src="../img-video/notificacao.png" alt="Notificações" class="header-icon">
+                <img src="../img-video/sms.png" alt="Mensagens" class="header-icon">
+                <a href="caminho/para/sua/pagina.html">
+                    <img src="../img-video/icousuario.png" alt="Perfil" class="header-icon">
+                </a>
+            </div>
+        </header>
+
+        <!-- Área de conteúdo do Help Center -->
+        <section class="help-center">
+            <h1>Como podemos ajudar você?</h1>
+
+            <!-- Artigos principais -->
+            <div class="top-articles">
+                <div class="article">
+                    <h2>Como encontrar vagas específicas?</h2>
+                    <p>Utilize a barra de pesquisa para procurar vagas por palavras-chave relacionadas ao cargo, setor ou localização.</p>
+                </div>
+                <div class="article">
+                    <h2>Como configurar alertas de emprego?</h2>
+                    <p>Ative alertas de emprego para receber notificações de vagas que correspondem aos seus interesses.</p>
+                </div>
+                <div class="article">
+                    <h2>Como editar seu perfil?</h2>
+                    <p>Aprenda a atualizar suas informações de perfil para manter-se atrativo para empregadores.</p>
+                </div>
+            </div>
+
+            <!-- Últimas discussões -->
+            <h2>Últimas discussões</h2>
+            <ul class="discussions">
+                <li onclick="toggleDropdown(this)">Como salvar vagas para ver mais tarde? <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Você pode salvar as vagas clicando no ícone de salvar ao lado da vaga desejada.</div>
+                </li>
+                <li onclick="toggleDropdown(this)">Como enviar seu currículo para uma vaga? <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Envie seu currículo ao clicar no botão "Candidatar-se" e anexar seu arquivo.</div>
+                </li>
+                <li onclick="toggleDropdown(this)">Como redefinir sua senha? <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Vá até as configurações de conta e selecione "Redefinir senha".</div>
+                </li>
+                <li onclick="toggleDropdown(this)">Como se candidatar a uma vaga pelo celular? <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Acesse nosso app, busque pela vaga e siga as instruções de candidatura.</div>
+                </li>
+                <li onclick="toggleDropdown(this)">Como atualizar suas habilidades no perfil? <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Entre no seu perfil e clique em "Editar Habilidades" para atualizar.</div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        function toggleDropdown(element) {
+            const content = element.querySelector('.dropdown-content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

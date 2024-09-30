@@ -1,0 +1,74 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Botão de Voltar */
+.back-button {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #004aad;
+}
+
+/* Container Principal */
+.main-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.date {
+    text-align: center;
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #444444;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}

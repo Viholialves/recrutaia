@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta - Rede Social</title>
+    <link rel="stylesheet" href="../css/publi.css">
+</head>
+
+<body>
+    <!-- Sidebar com logo e menu -->
+    <aside class="sidebar">
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="sidebar-logo">
+        <nav class="menu">
+            <a href="cursos.html" class="menu-item">
+                <img src="../img-video/home.png" alt="Página inicial" class="menu-icon">
+                Página inicial <span class="audio-icon" onclick="speakText('Página inicial')">🔊</span>
+            </a>
+            <a href="help.html" class="menu-item">
+                <img src="../img-video/help.png" alt="Help center" class="menu-icon">
+                Help center <span class="audio-icon" onclick="speakText('Help center')">🔊</span>
+            </a>
+            <a href="../html/trabalhos.html" class="menu-item">
+                <img src="../img-video/bolsa.png" alt="Empregos" class="menu-icon">
+                Empregos <span class="audio-icon" onclick="speakText('Empregos')">🔊</span>
+            </a>
+            <a href="publicar.html" class="menu-item">
+                <img src="../img-video/publicarico.png" alt="Publicar" class="menu-icon">
+                Publicar <span class="audio-icon" onclick="speakText('Publicar')">🔊</span>
+            </a>
+            <a href="cursos.html" class="menu-item">
+                <img src="../img-video/cursosico.png" alt="Cursos" class="menu-icon">
+                Cursos <span class="audio-icon" onclick="speakText('Cursos')">🔊</span>
+            </a>
+            <a href="configu.html" class="menu-item">
+                <img src="../img-video/confi.png" alt="Configurações" class="menu-icon"> 
+                Configurações <span class="audio-icon" onclick="speakText('Configurações')">🔊</span>
+            </a>
+
+        </nav>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Header com barra de navegação -->
+        <header class="header">
+            <input type="text" placeholder="Digite o que deseja encontrar" class="search-bar">
+            <div class="header-icons">
+                <img src="../img-video/notificacao.png" alt="Notificações" class="header-icon" onclick="speakText('Notificações')">
+                <img src="../img-video/sms.png" alt="Mensagens" class="header-icon" onclick="speakText('Mensagens')">
+                <a href="caminho/para/sua/pagina.html">
+                    <img src="../img-video/icousuario.png" alt="Perfil" class="header-icon" onclick="speakText('Perfil do usuário')">
+                </a>
+            </div>
+        </header>
+
+        <!-- Área de postagem -->
+        <section class="post-area">
+            <div class="post-create">
+                <img src="../img-video/nos.png" alt="Foto de Perfil" class="user-icon">
+                <input type="text" placeholder="Escreve uma publicação" class="post-input">
+                <button class="post-button" onclick="speakText('Foto/Vídeo')">Foto/Vídeo 🔊</button>
+            </div>
+
+            <!-- Publicação 1 -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="../img-video/perfilru.png" alt="Foto de Perfil" class="post-profile-pic">
+                    <div class="post-info">
+                        <span class="username">Pixel with purpose <span class="audio-icon" onclick="speakText('Pixel with purpose')">🔊</span></span>
+                        <span class="time">18 de Julho de 2024 <span class="audio-icon" onclick="speakText('18 de Julho de 2024')">🔊</span></span>
+                    </div>
+                    <button class="follow-button" onclick="speakText('Seguir')">+ Seguir 🔊</button>
+                </div>
+                <img src="../img-video/publi.png" alt="Publicação 1" class="post-image">
+                <div class="post-interactions">
+                    <span>26 curtidas <span class="audio-icon" onclick="speakText('26 curtidas')">🔊</span></span>
+                    <span>5 comentários <span class="audio-icon" onclick="speakText('5 comentários')">🔊</span></span>
+                </div>
+                <div class="post-comment">
+                    <input type="text" placeholder="Escreva um comentário..." class="comment-input">
+                    <button class="comment-button" onclick="speakText('Enviar comentário')">Enviar 🔊</button>
+                </div>
+            </div>
+
+            <!-- Publicação 2 -->
+            <div class="post">
+                <div class="post-header">
+                    <img src="../img-video/perfilru.png" alt="Foto de Perfil" class="post-profile-pic">
+                    <div class="post-info">
+                        <span class="username">Benefícios do seu jeito | Prepare-se <span class="audio-icon" onclick="speakText('Benefícios do seu jeito, Prepare-se')">🔊</span></span>
+                        <span class="time">18 de Julho de 2024 <span class="audio-icon" onclick="speakText('18 de Julho de 2024')">🔊</span></span>
+                    </div>
+                    <button class="follow-button" onclick="speakText('Seguir')">+ Seguir 🔊</button>
+                </div>
+                <img src="../img-video/publi2.webp" alt="Publicação 2" class="post-image">
+                <div class="post-interactions">
+                    <span>10 curtidas <span class="audio-icon" onclick="speakText('10 curtidas')">🔊</span></span>
+                    <span>2 comentários <span class="audio-icon" onclick="speakText('2 comentários')">🔊</span></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Função para sintetizar a voz dos textos
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

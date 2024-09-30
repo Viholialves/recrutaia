@@ -1,0 +1,145 @@
+/* Estilo do body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B;
+    color: #ffffff;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #0D354B;
+    width: 220px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to right, #12232e, #203647);
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+/* Vagas Area */
+.vagas-area {
+    background-color: #2983B5;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0D354B;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.recommended-jobs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.job-card {
+    background-color: #0D354B;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+.job-icon {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.new-jobs {
+    margin-top: 20px;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.job-item {
+    display: flex;
+    align-items: center;
+    background-color: #0D354B;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.job-details {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.job-time {
+    color: #a0aec0;
+}

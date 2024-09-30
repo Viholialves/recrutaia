@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta - Vagas</title>
+    <link rel="stylesheet" href="../css/trabalhos.css">
+</head>
+
+<body>
+    <!-- Sidebar com logo e menu -->
+    <aside class="sidebar">
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="sidebar-logo">
+        <nav class="menu">
+            <a href="cursos.html" class="menu-item"><img src="../img-video/home.png" alt="Página inicial" class="menu-icon"> Página inicial</a>
+            <a href="../html/help.html" class="menu-item"><img src="../img-video/help.png" alt="Help center" class="menu-icon"> Help center</a>
+            <a href="../html/trabalhos.html" class="menu-item"><img src="../img-video/bolsa.png" alt="Empregos" class="menu-icon"> Empregos</a>
+            <a href="publicar.html" class="menu-item"><img src="../img-video/publicarico.png" alt="Publicar" class="menu-icon"> Publicar</a>
+            <a href="cursos.html" class="menu-item"><img src="../img-video/cursosico.png" alt="Cursos" class="menu-icon"> Cursos</a>
+            <a href="configu.html" class="menu-item"><img src="../img-video/confi.png" alt="Configurações" class="menu-icon"> Configurações</a>
+        </nav>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Header com barra de navegação -->
+        <header class="header">
+            <input type="text" placeholder="Digite o que deseja encontrar" class="search-bar">
+            <div class="header-icons">
+                <img src="../img-video/notificacao.png" alt="Notificações" class="header-icon">
+                <a href="aviso.html">
+                    <img src="../img-video/sms.png" alt="Mensagens" class="header-icon"></a>
+                    <a href="aviso.html">
+                        <img src="../img-video/icousuario.png" alt="Perfil" class="header-icon">
+                    </a>
+            </div>
+        </header>
+
+        <!-- Área de Vagas -->
+        <section class="vagas-area">
+            <div class="filters">
+                <button class="filter-button">Designer</button>
+                <button class="filter-button">Remote</button>
+                <button class="filter-button">Auxiliar</button>
+                <button class="filter-button">RH</button>
+            </div>
+
+            <h2>Recomendados para você <span class="audio-icon" onclick="speakText('Recomendados para você, aperte na opção para ver sobre a vaga')">🔊</span></h2>
+
+            <div class="recommended-jobs">
+                <div class="job-card" onclick="window.location.href='ofertanormal.html'">
+                    <img src="../img-video/j.png" alt="Ícone da Vaga" class="job-icon">
+                    <h3>UX Designer <span class="audio-icon" onclick="speakText('UX Designer, Fokhaya Johns, Seattle, US, Remoto, 1 dia atrás em recruta.ia, aperte na opção para ver sobre a vaga')">🔊</span></h3>
+                    <p>Fokhaya Johns</p>
+                    <p>Seattle, US</p>
+                    <p>Remoto</p>
+                    <p class="recruta-text">1 dia atrás em recruta.ia</p>
+                </div>
+                <div class="job-card" onclick="window.location.href='ofertanormal.html'">
+                    <img src="../img-video/j.png" alt="Ícone da Vaga" class="job-icon">
+                    <h3>Auxiliar do RH <span class="audio-icon" onclick="speakText('Auxiliar do RH, Rio de Janeiro, capital, semi-presencial, 2 dias atrás em recruta.ia, aperte na opção para ver sobre a vaga')">🔊</span></h3>
+                    <p>Rio de Janeiro</p>
+                    <p>capital</p>
+                    <p>semi-presencial</p>
+                    <p class="recruta-text">2 dias atrás em recruta.ia</p>
+                </div>
+                <div class="job-card" onclick="window.location.href='ofertanormal.html'">
+                    <img src="../img-video/j.png" alt="Ícone da Vaga" class="job-icon">
+                    <h3>Equipe de Designers <span class="audio-icon" onclick="speakText('Equipe de Designers, Sorocaba, SP, Remoto, 7 dias atrás em recruta.ia, aperte na opção para ver sobre a vaga')">🔊</span></h3>
+                    <p>Sorocaba</p>
+                    <p>SP</p>
+                    <p>Remoto</p>
+                    <p class="recruta-text">7 dias atrás em recruta.ia</p>
+                </div>
+                <div class="job-card" onclick="window.location.href='ofertanormal.html'">
+                    <img src="../img-video/j.png" alt="Ícone da Vaga" class="job-icon">
+                    <h3>Auxiliar <span class="audio-icon" onclick="speakText('Auxiliar, Serra Talhada, Recife, Presencial, 3 dias atrás em recruta.ia, aperte na opção para ver sobre a vaga')">🔊</span></h3>
+                    <p>Serra Talhada</p>
+                    <p>Recife</p>
+                    <p>Presencial</p>
+                    <p class="recruta-text">3 dias atrás em recruta.ia</p>
+                </div>
+            </div>
+
+            <div class="new-jobs">
+                <h2>O que há de novo <span class="audio-icon" onclick="speakText('O que há de novo, aperte na opção para ver sobre a vaga')">🔊</span></h2>
+                <div class="job-list">
+                    <div class="job-item" onclick="window.location.href='ofertanormal.html'">
+                        <img src="../img-video/j.png" alt="Ícone da Vaga" class="job-icon">
+                        <div class="job-details">
+                            <h3>Software Engineer <span class="audio-icon" onclick="speakText('Software Engineer, Fokhaya Johns, Seattle, US, Remoto, 1 dia atrás em recruta.ia, aperte na opção para ver sobre a vaga')">🔊</span></h3>
+                            <p>Fokhaya Johns</p>
+                            <p>Seattle, US</p>
+                            <p>Remoto</p>
+                        </div>
+                        <p class="job-time">1 dia atrás em <span class="recruta-text">recruta.ia</span></p>
+                    </div>
+                    <div class="job-item" onclick="window.location.href='ofertanormal.html'">
+                        <img src="../img-video/j.png" alt="Ícone da Vaga" class="job-icon">
+                        <div class="job-details">
+                            <h3>Data Analyst <span class="audio-icon" onclick="speakText('Data Analyst, EUA, Remoto, 2 dias atrás em recruta.ia, aperte na opção para ver sobre a vaga')">🔊</span></h3>
+                            <p>EUA</p>
+                            <p>EUA</p>
+                            <p>Remoto</p>
+                        </div>
+                        <p class="job-time">2 dias atrás em <span class="recruta-text">recruta.ia</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

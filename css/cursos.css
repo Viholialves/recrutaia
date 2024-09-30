@@ -1,0 +1,129 @@
+/* Estilo do body */ 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B;
+    color: #ffffff;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #0D354B;
+    width: 220px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to right, #12232e, #203647);
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 50%; /* Reduz a largura da barra de pesquisa */
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+/* Cursos Area */
+.cursos-area {
+    color: #ffffff;
+}
+
+.cursos-recomendados {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.curso-card {
+    background-image: url(../img-video/1curso.png);
+    padding: 30px;
+    border-radius: 8px;
+    width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-card h3 {
+    margin-bottom: 10px;
+}
+
+.outros-cursos {
+    margin-top: 20px;
+}
+
+.outro-curso-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.curso-icon {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.curso-details {
+    flex: 1;
+}
+
+.curso-details h3 {
+    color: #00BFA6;
+}
+
+.curso-details p {
+    color: #ffffff;
+    margin: 5px 0;
+}

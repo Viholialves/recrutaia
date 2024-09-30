@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B; /* Fundo azul escuro */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-y: hidden; /* Remove a barra de rolagem vertical */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    padding: 10px; /* Reduz o padding para diminuir o espaço total */
+    margin-top: 5px; /* Menor margem superior para subir a logo */
+    text-align: center;
+    position: relative;
+}
+
+.back-button {
+    position: fixed; /* Mantém o botão "Voltar" fixo no canto */
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    z-index: 1000; /* Garante que o botão esteja visível acima de outros elementos */
+}
+
+.logo {
+    max-width: 250px;
+    margin-top: 5px; /* Reduz a margem superior para subir a logo */
+    margin-bottom: 10px; /* Reduz a margem inferior para evitar espaço extra */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.integracao-area {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0 0 15px; /* Reduz o espaço abaixo do título */
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.input-group input,
+.input-group select {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    padding: 8px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.audio-icon {
+    cursor: pointer;
+    color: #0b3b5c;
+    font-size: 18px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Menor margem para ajustar o layout */
+}
+
+.next-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b00e0;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #3700b3;
+}

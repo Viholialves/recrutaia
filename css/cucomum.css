@@ -1,0 +1,77 @@
+/* Geral */
+body {
+    background-color: #0D354B;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculo {
+    background-color: #1B4965;
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%; /* Usei 80% para garantir que a página se ajuste a diversas resoluções */
+    max-width: 1000px; /* Limite máximo de largura */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.curriculo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffffff; /*palavra curriculo*/
+}
+
+/* Info group styling */
+.info-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #82C4E8; /*fundo das op*/
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.info-group label {
+    font-size: 18px;
+    color: #02213B;/*palavras lado esquerdo*/
+    font-weight: bold;
+}
+
+.info-edit {
+    display: flex;
+    align-items: center;
+}
+
+.info-edit span {
+    font-size: 16px;
+    color: #02213B; /*lado direito texto*/
+    margin-right: 10px;
+}
+
+.info-edit img {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Botão de Voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #008AAC;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #005f73;
+}

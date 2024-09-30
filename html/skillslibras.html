@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta Acessível - Skills</title>
+    <link rel="stylesheet" href="../css/skillslibras.css">
+</head>
+
+<body>
+    <!-- Início da integração VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Fim da integração VLibras -->
+
+    <div class="full-screen-container">
+        <div class="main-container">
+            <!-- Botão de Voltar -->
+            <a href="../html/vagasinlibras.html" class="back-button">← Voltar</a>
+
+            <!-- Imagem com Logo -->
+            <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="logo">
+
+            <!-- Área de Skills -->
+            <div class="skills-area">
+                <h2>Skills</h2>
+
+                <!-- Formulário de Skills -->
+                <form>
+                    <div class="input-group">
+                        <label for="communication-skills">Skills de comunicação:</label>
+                        <input type="text" id="communication-skills" placeholder="Digite suas habilidades de comunicação" aria-label="Habilidades de comunicação">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="technical-skills">Skills técnicas:</label>
+                        <input type="text" id="technical-skills" placeholder="Digite suas habilidades técnicas" aria-label="Habilidades técnicas">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="management-skills">Skills de gestão:</label>
+                        <input type="text" id="management-skills" placeholder="Digite suas habilidades de gestão" aria-label="Habilidades de gestão">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="other-skills">Outras Skills:</label>
+                        <input type="text" id="other-skills" placeholder="Digite outras habilidades" aria-label="Outras habilidades">
+                    </div>
+
+                    <!-- Botão Próximo -->
+                    <button type="button" class="next-button" onclick="window.location.href='./termoslibras.html'">Próximo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

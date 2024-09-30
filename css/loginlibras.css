@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B; /* Fundo da tela */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    background-color: #0D354B;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Mantém o botão de voltar mais à esquerda */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo {
+    max-width: 300px; /* Aumenta o tamanho da logo */
+    margin-bottom: 30px; /* Adiciona mais espaço abaixo da logo */
+    margin-top: -10px;
+}
+
+.login-area {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 30px; /* Adiciona mais espaço abaixo do título */
+}
+
+.input-group {
+    margin-bottom: 25px; /* Aumenta o espaçamento entre os campos */
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 25px; /* Adiciona mais espaço abaixo das opções de link */
+}
+
+.forgot-password,
+.create-account {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.forgot-password:hover,
+.create-account:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b00e0;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 25px; /* Adiciona mais espaço acima do botão */
+}
+
+.login-button:hover {
+    background-color: #3700b3;
+}

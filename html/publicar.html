@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta - Publicar</title>
+    <link rel="stylesheet" href="../css/publicar.css">
+</head>
+
+<body>
+
+    <!-- Sidebar com logo e menu -->
+    <aside class="sidebar">
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="sidebar-logo">
+        <nav class="menu">
+            <a href="cursos.html" class="menu-item"><img src="../img-video/home.png" alt="Página inicial" class="menu-icon"> Página inicial</a>
+            <span class="audio-icon" onclick="speakText('Página inicial')">🔊</span>
+            <a href="../html/help.html" class="menu-item"><img src="../img-video/help.png" alt="Help center" class="menu-icon"> Help center</a>
+            <span class="audio-icon" onclick="speakText('Help center')">🔊</span>
+            <a href="../html/trabalhos.html" class="menu-item"><img src="../img-video/bolsa.png" alt="Empregos" class="menu-icon"> Empregos</a>
+            <span class="audio-icon" onclick="speakText('Empregos')">🔊</span>
+            <a href="../html/publicar.html" class="menu-item"><img src="../img-video/publicarico.png" alt="Publicar" class="menu-icon"> Publicar</a>
+            <span class="audio-icon" onclick="speakText('Publicar')">🔊</span>
+            <a href="cursos.html" class="menu-item"><img src="../img-video/cursosico.png" alt="Cursos" class="menu-icon"> Cursos</a>
+            <span class="audio-icon" onclick="speakText('Cursos')">🔊</span>
+            <a href="configu.html" class="menu-item"><img src="../img-video/confi.png" alt="Configurações" class="menu-icon"> Configurações</a>
+            <span class="audio-icon" onclick="speakText('Configurações')">🔊</span>
+        </nav>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Header com barra de navegação -->
+        <header class="header">
+            <label for="search-bar">Pesquisar:</label>
+            <span class="audio-icon" onclick="speakText('Pesquisar')">🔊</span>
+            <input id="search-bar" type="text" placeholder="Digite o que deseja encontrar" class="search-bar">
+        </header>
+
+        <!-- Área de Publicação -->
+        <section class="publicar-area">
+            <div class="publicar-box">
+                <div class="publicar-header">
+                    <img src="../img-video/moca.png" alt="Foto de Perfil" class="perfil-icon">
+                    <span class="publicar-opcao">Todos ▼</span>
+                </div>
+                <p>Digite o que deseja compartilhar no quadrado branco abaixo:</p>
+                <span class="audio-icon" onclick="speakText('Digite o que deseja compartilhar no quadrado branco abaixo')">🔊</span>
+                <textarea class="publicar-textarea" placeholder="Compartilhe suas ideias..."></textarea>
+                <div class="publicar-actions">
+                    <div class="publicar-icones">
+                        <button class="action-button"><img src="../img-video/galeria.png" alt="Adicionar Imagem"></button>
+                        <button class="action-button"><img src="../img-video/mais.png" alt="Adicionar Mais"></button>
+                    </div>
+                    <button class="postar-button">Postar ➤</button>
+                    <span class="audio-icon" onclick="speakText('Postar')">🔊</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

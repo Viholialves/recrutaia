@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta - Configurações</title>
+    <link rel="stylesheet" href="../css/configu.css">
+</head>
+
+<body>
+    <!-- Sidebar com logo e menu -->
+    <aside class="sidebar">
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="sidebar-logo">
+        <nav class="menu">
+            <a href="cursos.html" class="menu-item"><img src="../img-video/home.png" alt="Página inicial" class="menu-icon"> Página inicial</a>
+            <span class="audio-icon" onclick="speakText('Página inicial')">🔊</span>
+            <a href="../html/help.html" class="menu-item"><img src="../img-video/help.png" alt="Help center" class="menu-icon"> Help center</a>
+            <span class="audio-icon" onclick="speakText('Help center')">🔊</span>
+            <a href="../html/trabalhos.html" class="menu-item"><img src="../img-video/bolsa.png" alt="Empregos" class="menu-icon"> Empregos</a>
+            <span class="audio-icon" onclick="speakText('Empregos')">🔊</span>
+            <a href="../html/publicar.html" class="menu-item"><img src="../img-video/publicarico.png" alt="Publicar" class="menu-icon"> Publicar</a>
+            <span class="audio-icon" onclick="speakText('Publicar')">🔊</span>
+            <a href="../html/cursos.html" class="menu-item"><img src="../img-video/cursosico.png" alt="Cursos" class="menu-icon"> Cursos</a>
+            <span class="audio-icon" onclick="speakText('Cursos')">🔊</span>
+            <a href="configu.html" class="menu-item"><img src="../img-video/confi.png" alt="Configurações" class="menu-icon"> Configurações</a>
+            <span class="audio-icon" onclick="speakText('Configurações')">🔊</span>
+        </nav>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Configurações -->
+        <section class="configuracoes">
+            <h2>
+                Configurações
+                <img src="../img-video/som.png" alt="Audio" class="audio-icon" onclick="lerTexto()">
+            </h2>
+            <ul class="config-list">
+                <li><a href="aviso.html">Preferências da conta</a></li>
+                <li><a href="aviso.html">Login & segurança</a></li>
+                <li><a href="aviso.html">Visibilidade</a></li>
+                <li><a href="aviso.html">Privacidade dos dados</a></li>
+                <li><a href="aviso.html">Dados de publicidade</a></li>
+                <li><a href="aviso.html">Notificações</a></li>
+            </ul>
+
+            <hr class="divisor">
+
+            <ul class="config-support">
+                <li><a href="aviso.html">Centro de ajuda</a></li>
+                <li><a href="aviso.html">Políticas da comunidade profissional</a></li>
+                <li><a href="aviso.html">Política de privacidade</a></li>
+                <li><a href="aviso.html">Acessibilidade</a></li>
+                <li><a href="aviso.html">Contrato do usuário</a></li>
+                <li><a href="aviso.html">Contrato do usuário final</a></li>
+            </ul>
+            <a href="../index.html" class="logout">Sair</a>
+        </section>
+    </main>
+    <script>
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+    <!-- Script para leitura de áudio -->
+    <script>
+        function lerTexto() {
+            const texto = "Configurações: Aqui você pode acessar suas preferências de conta, login e segurança, visibilidade, privacidade dos dados, dados de publicidade e notificações.";
+            const utterance = new SpeechSynthesisUtterance(texto);
+            utterance.lang = 'pt-BR'; // Definir o idioma para português do Brasil
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

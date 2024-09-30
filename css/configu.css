@@ -1,0 +1,194 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #0D354B; /* Fundo da barra lateral */
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.menu-item:hover {
+    background-color: #008aac;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu-item.active {
+    background-color: #055b19;
+    font-weight: bold;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #0D354B;
+}
+
+.configuracoes {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #82C4E8; /* Fundo da área de configurações */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.configuracoes h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0b0b0b;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilizando o ícone de áudio */
+.audio-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.audio-icon:hover {
+    transform: scale(1.2);
+}
+
+.config-list,
+.config-support {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.config-list li,
+.config-support li {
+    margin-bottom: 15px;
+}
+
+.config-list a,
+.config-support a {
+    color: #000fdd;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.config-list a:hover,
+.config-support a:hover {
+    color: #08080751;
+}
+
+.divisor {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #434141;
+}
+
+/* Botão de Sair */
+.logout {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: #d32f2f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.logout:hover {
+    background-color: #b71c1c;
+}
+
+/* Botão de Voltar */
+.back-button {
+    background-color: #017BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #005BB5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .configuracoes {
+        padding: 20px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+
+    .config-list a,
+    .config-support a {
+        font-size: 16px;
+    }
+
+    .audio-icon {
+        width: 24px;
+        height: 24px;
+    }
+}

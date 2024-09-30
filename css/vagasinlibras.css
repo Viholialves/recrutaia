@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B; /* Fundo consistente */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh; /* Altura total da tela */
+}
+
+.full-screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.logo {
+    max-width: 300px; /* Ajusta o tamanho da logo */
+    margin: 0;
+    margin-top: -5px; /* Puxa a logo mais para cima */
+}
+
+.vagas-area {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+h2 {
+    font-size: 28px; /* Tamanho do título */
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px; /* Tamanho dos rótulos */
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.input-group select,
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Tamanho do texto dentro dos campos */
+    color: #333;
+    outline: none;
+}
+
+.next-button {
+    width: 100%; /* Alinha o botão com a largura do formulário */
+    padding: 15px 20px; /* Aumenta o espaçamento interno do botão */
+    border: none;
+    border-radius: 8px; /* Define bordas arredondadas */
+    background-color: #4b00e0; /* Cor roxa do botão */
+    color: #ffffff; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Efeito ao passar o mouse */
+    margin-top: 20px; /* Espaço entre o botão e os campos acima */
+}
+
+.next-button:hover {
+    background-color: #3700b3; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.02); /* Efeito de leve aumento ao passar o mouse */
+}
+
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}

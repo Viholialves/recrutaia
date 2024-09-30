@@ -1,0 +1,91 @@
+/* Geral */
+body {
+    background-color: #0D354B;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container do Teste DISC */
+.teste-disc-container {
+    background-color: #1B4965;
+    padding: 40px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.teste-disc-content {
+    text-align: center;
+}
+
+.teste-disc-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #82C4E8;
+}
+
+.disc-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.disc-description ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.disc-description ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.disc-description strong {
+    color: #ffb703;
+}
+
+/* Botão para Iniciar Teste DISC */
+.start-disc {
+    text-align: center;
+}
+
+.start-button {
+    background-color: #008AAC;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #006994;
+}
+
+/* Botão de Voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #008AAC;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #005f73;
+}

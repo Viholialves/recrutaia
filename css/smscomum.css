@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0D354B;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content {
+    width: 80%;
+    margin: 20px;
+}
+
+.mensagens {
+    background-color: #1B4965;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message-item {
+    display: flex;
+    align-items: center;
+    background-color: #82C4E8;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.message-content h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #083D77;
+}
+
+.message-content p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.message-badge {
+    background-color: #008AAC;
+    color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estilização do botão de voltar */
+.back-button {
+    background-color: #008AAC;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    background-color: #005F6B;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta Acessível - Vagas de Interesse</title>
+    <link rel="stylesheet" href="../css/vagasin.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Botão de Voltar com ícone de áudio -->
+        <a href="../html/integra.html" class="back-button" onclick="speakText('Voltar')">← Voltar</a>
+
+        <!-- Imagem com Logo -->
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="logo">
+
+        <!-- Área de Vagas de Interesse -->
+        <div class="vagas-area">
+            <h2>Vaga de Interesse <span class="audio-icon" onclick="speakText('Vaga de Interesse')">🔊</span></h2>
+
+            <!-- Formulário de Vagas de Interesse -->
+            <form>
+                <div class="input-group">
+            
+                    <select id="vaga-desejada" aria-label="Vaga desejada" onchange="speakSelectedOption(this)">
+                        <option value="" disabled selected>Escolha a vaga desejada</option>
+                        <option value="Desenvolvedor">Desenvolvedor</option>
+                        <option value="Designer">Auxiliar</option>
+                        <option value="Analista de Dados">Estágio</option>
+                        <option value="Gerente de Projetos">Gerente</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                    <span class="audio-icon" onclick="speakText('Escolha a vaga desejada')">🔊</span>
+                </div>
+                <div class="input-group">
+                   
+                    <select id="pretensao-salarial" aria-label="Pretensão salarial" onchange="speakSelectedOption(this)">
+                        <option value="" disabled selected>Escolha a pretensão salarial</option>
+                        <option value="1500-3000">R$ 1.500 - R$ 3.000</option>
+                        <option value="3000-5000">R$ 3.000 - R$ 5.000</option>
+                        <option value="5000-8000">R$ 5.000 - R$ 8.000</option>
+                        <option value="8000+">R$ 8.000+</option>
+                    </select>
+                    <span class="audio-icon" onclick="speakText('Escolha a pretensão salarial')">🔊</span>
+                </div>
+                <div class="input-group">
+                   
+                    <input type="text" id="cidade-residente" placeholder="Digite sua cidade residente" aria-label="Cidade residente">
+                    <span class="audio-icon" onclick="speakText('Cidade residente')">🔊</span>
+                </div>
+                <div class="input-group">
+                   
+                    <input type="text" id="cidade-atuacao" placeholder="Digite sua cidade para atuação" aria-label="Cidade para atuação">
+                    <span class="audio-icon" onclick="speakText('Cidade para atuação')">🔊</span>
+                </div>
+                <div class="input-group">
+                  
+                    <input type="text" id="distancia-pretendida" placeholder="Digite a distância pretendida" aria-label="Distância pretendida">
+                    <span class="audio-icon" onclick="speakText('Distância pretendida')">🔊</span>
+                </div>
+
+                <!-- Botão Próximo com ícone de áudio separado -->
+                <div class="button-container">
+                    <button type="button" class="next-button" onclick="window.location.href='./skills.html'">Próximo</button>
+                    <span class="audio-icon" onclick="speakText('Próximo')">🔊</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Função para sintetizar a voz dos textos
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+
+        // Função para sintetizar a voz do texto selecionado em um select
+        function speakSelectedOption(selectElement) {
+            const selectedText = selectElement.options[selectElement.selectedIndex].text;
+            speakText(selectedText);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B; /* Fundo de cor consistente com a logo */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Espaço superior para descolar do topo */
+}
+
+.back-button {
+    align-self: flex-start;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.logo {
+    max-width: 300px;
+    margin-bottom: 50px; /* Aumenta o espaço abaixo da logo */
+}
+
+.login-area {
+    width: 100%;
+    padding: 20px;
+    text-align: center; /* Modificado para centralizar o título */
+    margin-bottom: 30px; /* Aumenta o espaço para separar a seção de login */
+}
+
+h2 {
+    margin: 0 0 40px;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center; /* Centraliza o texto "Login" */
+}
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; /* Aumenta o espaço entre os campos de entrada */
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.audio-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #0b3b5c;
+    font-size: 18px;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 15px 0 30px; /* Aumenta o espaço para separar das opções */
+}
+
+.forgot-password {
+    color: #1e90ff; /* Tom azul para indicar que é clicável */
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b00e0;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px; /* Aumenta o espaço acima do botão Entrar */
+}
+
+.login-button:hover {
+    background-color: #3700b3;
+}
+
+.create-account {
+    font-size: 14px;
+    margin-top: 20px; /* Aumenta o espaço acima da opção Criar Conta */
+    color: #1e90ff; /* Tom azul para indicar que é clicável */
+}
+
+.create-account a {
+    color: #1e90ff; /* Tom azul para indicar que é clicável */
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}

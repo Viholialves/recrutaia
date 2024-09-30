@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0D354B;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    color: #0D354B;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Skills Section */
+.skills {
+    width: 600px; /* Aumentado para deixar mais espaçoso */
+    padding: 40px;
+    background-color: #1B4965;
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra para maior profundidade */
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #fff; /* Mantendo o contraste */
+}
+
+.add-skill {
+    background-color: #008AAC;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.add-skill:hover {
+    background-color: #00718A;
+}
+
+.skills-list {
+    margin-top: 20px;
+}
+
+.skill-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px; /* Aumentado para melhorar a legibilidade */
+}
+
+.skill-item p {
+    color: #fff;
+    font-size: 18px; /* Aumentado para tornar a leitura mais confortável */
+}
+
+.edit-icon {
+    font-size: 18px; /* Aumentado para combinar com o novo tamanho da fonte */
+    color: #fff;
+    cursor: pointer;
+}
+
+.edit-icon:hover {
+    color: #008AAC;
+}

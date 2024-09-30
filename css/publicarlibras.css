@@ -1,0 +1,154 @@
+/* Estilo do body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B;
+    color: #ffffff;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #0D354B;
+    width: 220px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(to right, #12232e, #203647);
+    color: #ffffff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+/* Publicar Area */
+.publicar-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.publicar-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    color: #0D354B;
+}
+
+.publicar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.perfil-icon {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.publicar-opcao {
+    font-size: 16px;
+    color: #0D354B;
+}
+
+.publicar-textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #0D354B;
+    resize: none;
+    height: 100px;
+}
+
+.publicar-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.publicar-icones {
+    display: flex;
+    gap: 10px;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.action-button img {
+    width: 24px;
+}
+
+.postar-button {
+    background-color: #0D354B;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}

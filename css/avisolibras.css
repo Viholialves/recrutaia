@@ -1,0 +1,58 @@
+/* Estilo do body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #12232e, #203647);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Caixa de mensagem */
+.message-box {
+    background-color: #2983B5;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+.message-box h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.message-box p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* Botão Voltar - fora do container */
+.back-button {
+    background-color: #12232e;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #203647;
+}
+
+/* Logo */
+.logo {
+    width: 200px;
+    margin-top: 20px;
+}

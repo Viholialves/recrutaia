@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta Acessível - Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <!-- Botão de Voltar com Ícone -->
+        <a href="../index.html" class="back-button">← Voltar</a>
+
+        <!-- Imagem com Logo -->
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="logo">
+
+        <!-- Área de Login -->
+        <div class="login-area">
+            <h2>Login <span class="audio-icon" onclick="speakText('Login')">🔊</span></h2>
+
+            <!-- Formulário de Login -->
+            <form onsubmit="return validateForm(event)">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Digite seu email" aria-label="Email" required>
+                    <span class="audio-icon" onclick="speakText('Digite seu email')">🔊</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="senha" placeholder="Digite sua senha" aria-label="Senha" required>
+                    <span class="audio-icon" onclick="speakText('Digite sua senha')">🔊</span>
+                </div>
+
+                <!-- Links para recuperação de senha e criação de conta -->
+                <div class="login-links">
+                    <a href="#" class="forgot-password">
+                        Esqueci minha senha 
+                        <span class="audio-icon" onclick="event.preventDefault(); speakText('Esqueci minha senha')">🔊</span>
+                    </a>
+                    <a href="../html/cadastro.html" class="create-account">
+                        Não tenho uma conta. criar conta 
+                        <span class="audio-icon" onclick="event.preventDefault(); speakText('Não tenho uma conta. criar conta')">🔊</span>
+                    </a>
+                </div>
+
+                <!-- Botão de Entrar com Ícone de Áudio -->
+                <button type="submit" class="login-button">
+                    Entrar <span class="audio-icon" onclick="speakText('Entrar')">🔊</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Função para validar o formulário e ler o texto
+        function validateForm(event) {
+            event.preventDefault(); // Previne a submissão padrão do formulário
+
+            // Obter os valores dos campos
+            const email = document.getElementById('email').value.trim();
+            const senha = document.getElementById('senha').value.trim();
+
+            // Verificar se os campos estão preenchidos
+            if (!email) {
+                alert('Por favor, preencha o campo de email.');
+                return false;
+            }
+
+            if (!senha) {
+                alert('Por favor, preencha o campo de senha.');
+                return false;
+            }
+
+            // Se os campos estiverem preenchidos, redirecionar para a próxima página
+            window.location.href = './integra.html';
+            return true;
+        }
+
+        // Função para sintetizar a voz dos textos
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+h2, h3 {
+    font-size: 20px;
+    color: #00BFA6;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Botão de Voltar */
+.back-button {
+    background-color: #00BFA6;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.back-button:hover {
+    background-color: #008f7a;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Info Boxes */
+.info-box {
+    background: linear-gradient(135deg, #2983B5 0%, #0D354B 100%);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    margin-left: 20px;
+}
+
+.info-content p {
+    margin: 10px 0;
+}
+
+/* Sobreposição de cores */
+.info-box {
+    background-color: #2983B5;
+    background: linear-gradient(145deg, #1C4C73, #122F44);
+}
+
+p, ul, li {
+    color: #E5E5E5;
+}

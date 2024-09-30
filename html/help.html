@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta - Help Center</title>
+    <link rel="stylesheet" href="../css/help.css">
+</head>
+
+<body>
+    <!-- Sidebar com logo e menu -->
+    <aside class="sidebar">
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="sidebar-logo">
+        <nav class="menu">
+            <a href="cursos.html" class="menu-item"><img src="../img-video/home.png" alt="Página inicial" class="menu-icon"> Página inicial</a>
+            <a href="../html/help.html" class="menu-item"><img src="../img-video/help.png" alt="Help center" class="menu-icon"> Help center</a>
+            <a href="trabalhos.html" class="menu-item"><img src="../img-video/bolsa.png" alt="Empregos" class="menu-icon"> Empregos</a>
+            <a href="publicar.html" class="menu-item"><img src="../img-video/publicarico.png" alt="Publicar" class="menu-icon"> Publicar</a>
+            <a href="cursos.html" class="menu-item"><img src="../img-video/cursosico.png" alt="Cursos" class="menu-icon"> Cursos</a>
+            <a href="configu.html" class="menu-item"><img src="../img-video/confi.png" alt="Configurações" class="menu-icon"> Configurações</a>
+        </nav>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Header com barra de navegação -->
+        <header class="header">
+            <input type="text" placeholder="Digite o que deseja encontrar" class="search-bar">
+            <div class="header-icons">
+                <img src="../img-video/notificacao.png" alt="Notificações" class="header-icon">
+                <a href="aviso.html">
+                <img src="../img-video/sms.png" alt="Mensagens" class="header-icon"></a>
+                <a href="aviso.html">
+                    <img src="../img-video/icousuario.png" alt="Perfil" class="header-icon">
+                </a>
+            </div>
+        </header>
+
+        <!-- Área de conteúdo do Help Center -->
+        <section class="help-center">
+            <h1>Como podemos ajudar você? <span class="audio-icon" onclick="speakText('Como podemos ajudar você?')">🔊</span></h1>
+
+            <!-- Artigos principais -->
+            <div class="top-articles">
+                <div class="article">
+                    <h2>Como encontrar vagas específicas? <span class="audio-icon" onclick="speakText('Como encontrar vagas específicas?')">🔊</span></h2>
+                    <p>Utilize a barra de pesquisa para procurar vagas por palavras-chave relacionadas ao cargo, setor ou localização.</p>
+                </div>
+                <div class="article">
+                    <h2>Como configurar alertas de emprego? <span class="audio-icon" onclick="speakText('Como configurar alertas de emprego?')">🔊</span></h2>
+                    <p>Ative alertas de emprego para receber notificações de vagas que correspondem aos seus interesses.</p>
+                </div>
+                <div class="article">
+                    <h2>Como editar seu perfil? <span class="audio-icon" onclick="speakText('Como editar seu perfil?')">🔊</span></h2>
+                    <p>Aprenda a atualizar suas informações de perfil para manter-se atrativo para empregadores.</p>
+                </div>
+            </div>
+
+            <!-- Últimas discussões -->
+            <h2>Últimas discussões <span class="audio-icon" onclick="speakText('Últimas discussões')">🔊</span></h2>
+            <ul class="discussions">
+                <li onclick="toggleDropdown(this)">Como salvar vagas para ver mais tarde? <span class="audio-icon" onclick="speakText('Como salvar vagas para ver mais tarde?')">🔊</span> <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Você pode salvar as vagas clicando no ícone de salvar ao lado da vaga desejada.</div>
+                </li>
+                <li onclick="toggleDropdown(this)">Como enviar seu currículo para uma vaga? <span class="audio-icon" onclick="speakText('Como enviar seu currículo para uma vaga?')">🔊</span> <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Envie seu currículo ao clicar no botão "Candidatar-se" e anexar seu arquivo.</div>
+                </li>
+                <li onclick="toggleDropdown(this)">Como redefinir sua senha? <span class="audio-icon" onclick="speakText('Como redefinir sua senha?')">🔊</span> <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Vá até as configurações de conta e selecione "Redefinir senha".</div>
+                </li>
+                <li onclick="toggleDropdown(this)">Como se candidatar a uma vaga pelo celular? <span class="audio-icon" onclick="speakText('Como se candidatar a uma vaga pelo celular?')">🔊</span> <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Acesse nosso app, busque pela vaga e siga as instruções de candidatura.</div>
+                </li>
+                <li onclick="toggleDropdown(this)">Como atualizar suas habilidades no perfil? <span class="audio-icon" onclick="speakText('Como atualizar suas habilidades no perfil?')">🔊</span> <span class="dropdown-icon">▼</span>
+                    <div class="dropdown-content">Entre no seu perfil e clique em "Editar Habilidades" para atualizar.</div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        function toggleDropdown(element) {
+            const content = element.querySelector('.dropdown-content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta Acessível</title>
+    <link rel="stylesheet" href="../recrutaia/css/style.css">
+</head>
+
+<body>
+    <!-- Início da integração VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Fim da integração VLibras -->
+
+    <div class="container">
+        <div class="content-wrapper">
+            <img src="../recrutaia/img-video/logo clara.png" alt="Recruta Acessível ao Trabalho" class="logo">
+            <h2>Bem-vindo! <span class="audio-icon" onclick="speakText('Bem-vindo!')">🔊</span></h2>
+            <form id="form">
+                <!-- Ícones de Acessibilidade -->
+                <div class="accessibility-icons">
+                    <img src="../recrutaia/img-video/audio.png" alt="Ícone de acessibilidade auditiva">
+                    <img src="../recrutaia/img-video/maos.png" alt="Ícone de libras">
+                    <img src="../recrutaia/img-video/cabeca.png" alt="Ícone de acessibilidade cognitiva">
+                    <img src="../recrutaia/img-video/olho.png" alt="Ícone de acessibilidade visual">
+                </div>
+
+                <div class="options-container">
+                    <div class="option">
+                        <label>Empresas</label>
+                        <span class="audio-icon" onclick="speakText('Empresas')">🔊</span>
+                    </div>
+                    <div class="option">
+                        <label>Candidato</label>
+                        <span class="audio-icon" onclick="speakText('Candidato')">🔊</span>
+                    </div>
+                </div>
+
+                <!-- Opções de ajuda -->
+                <div class="help-options">
+                    <div class="help-option" onclick="window.location.href='../recrutaia/html/apreselibras.html'">
+                        <label>Ajuda com legendas e libras</label>
+                        <span class="audio-icon" onclick="speakText('Ajuda com legendas e libras')">🔊</span>
+                    </div>
+                    <div class="help-option" onclick="window.location.href='../recrutaia/html/apresentacao.html'">
+                        <label>Ajuda para leitura e escrita</label>
+                        <span class="audio-icon" onclick="speakText('Ajuda com leitura')">🔊</span>
+                    </div>
+                    <div class="help-option" onclick="window.location.href='../recrutaia/html/apresennormal.html'">
+                        <label>Não necessito de ajuda</label>
+                        <span class="audio-icon" onclick="speakText('Não necessito de ajuda')">🔊</span>
+                    </div>
+                </div>
+
+                <!-- Botão de próxima ação -->
+                <button type="button" class="next-button" onclick="speakText('Próximo'); window.location.href='../recrutaia/html/apresennormal.html'">Próximo →</button>
+                <span class="audio-icon" onclick="speakText('próxima página')">🔊</span>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Função para sintetizar a voz dos textos
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

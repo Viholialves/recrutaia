@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta - Publicar</title>
+    <link rel="stylesheet" href="../css/publicarlibras.css">
+</head>
+
+<body>
+    <!-- Início da integração VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Fim da integração VLibras -->
+
+    <!-- Sidebar com logo e menu -->
+    <aside class="sidebar">
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="sidebar-logo">
+        <nav class="menu">
+            <a href="cursoslibras.html" class="menu-item"><img src="../img-video/home.png" alt="Página inicial" class="menu-icon"> Página inicial</a>
+            <a href="../html/helplibras.html" class="menu-item"><img src="../img-video/help.png" alt="Help center" class="menu-icon"> Help center</a>
+            <a href="../html/trabalhoslibras.html" class="menu-item"><img src="../img-video/bolsa.png" alt="Empregos" class="menu-icon"> Empregos</a>
+            <a href="../html/publicarlibras.html" class="menu-item"><img src="../img-video/publicarico.png" alt="Publicar" class="menu-icon"> Publicar</a>
+            <a href="cursoslibras.html" class="menu-item"><img src="../img-video/cursosico.png" alt="Cursos" class="menu-icon"> Cursos</a>
+            <a href="configulibras.html" class="menu-item"><img src="../img-video/confi.png" alt="Configurações" class="menu-icon"> Configurações</a>
+        </nav>
+    </aside>
+
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Header com barra de navegação -->
+        <header class="header">
+            <label for="search-bar">Pesquisar:</label>
+            <input id="search-bar" type="text" placeholder="Digite o que deseja encontrar" class="search-bar">
+            <div class="header-icons">
+                <img src="../img-video/notificacao.png" alt="Notificações" class="header-icon">
+                <a href="avisolibras.html">
+                    <img src="../img-video/sms.png" alt="Mensagens" class="header-icon"></a>
+                    <a href="avisolibras.html">
+                        <img src="../img-video/icousuario.png" alt="Perfil" class="header-icon">
+                    </a>
+            </div>
+        </header>
+
+        <!-- Área de Publicação -->
+        <section class="publicar-area">
+            <div class="publicar-box">
+                <div class="publicar-header">
+                    <img src="../img-video/moca.png" alt="Foto de Perfil" class="perfil-icon">
+                    <span class="publicar-opcao">Todos ▼</span>
+                </div>
+                <p>Digite o que deseja compartilhar no quadrado branco abaixo:</p>
+                <textarea class="publicar-textarea" placeholder="Compartilhe suas ideias..."></textarea>
+                <div class="publicar-actions">
+                    <div class="publicar-icones">
+                        <button class="action-button"><img src="../img-video/galeria.png" alt="Adicionar Imagem"></button>
+                        <button class="action-button"><img src="../img-video/mais.png" alt="Adicionar Mais"></button>
+                    </div>
+                    <button class="postar-button">Postar ➤</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

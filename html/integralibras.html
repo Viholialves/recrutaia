@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta Acessível - Integração</title>
+    <link rel="stylesheet" href="../css/integralibras.css">
+</head>
+
+<body>
+     <!-- Vlibras -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+    <div class="full-screen-container">
+        <!-- Vlibras final -->
+    <div class="main-container">
+        <!-- Botão de Voltar -->
+        <a href="cadaslibra.html" class="back-button">← Voltar</a>
+
+        <!-- Imagem com Logo -->
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="logo">
+
+        <!-- Área de Integração com o Vídeo -->
+        <div class="content-wrapper">
+            <!-- Área de Integração -->
+            <div class="integracao-area">
+                <h2>Integração</h2>
+
+                <!-- Formulário de Integração -->
+                <form>
+                    <div class="input-group">
+                        <input type="text" id="cidade" placeholder="Digite sua cidade" aria-label="Cidade">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="pais" placeholder="Digite seu pais" aria-label=" Pais">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="formacao" placeholder="Digite sua formação acadêmica" aria-label="Formação acadêmica">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="cpf" placeholder="Digite seu CPF" aria-label="CPF">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="idioma" placeholder="Digite seu idioma" aria-label="Idioma">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="interesse" placeholder="Digite suas áreas de interesse" aria-label="Interesse">
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="text" id="referencia" placeholder="Digite a referência (quem indicou)" aria-label="Referência">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="pagamento" placeholder="Digite sua preferência de pagamento" aria-label="Pagamento">
+                    </div>
+
+                    <!-- Botão Próximo -->
+                    <div class="button-group">
+                        <button type="button" class="next-button" onclick="window.location.href='./vagasinlibras.html'">Próximo →</button>
+                    </div>
+                </form>
+            </div>
+
+           
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

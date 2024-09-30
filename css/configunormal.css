@@ -1,0 +1,170 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #0D354B; /* Fundo da sidebar */
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-logo {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
+}
+
+.menu-item:hover {
+    background-color: #008aac;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu-item.active {
+    background-color: #055b19;
+    font-weight: bold;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #0D354B;
+}
+
+.configuracoes {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #005f73; /* Fundo mais escuro para o container */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave no container */
+}
+
+.configuracoes h2 { 
+    font-size: 24px;
+    color: #ffffff; /* Título "Configurações" */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffffff; /* Linha */
+    padding-bottom: 10px;
+}
+
+/* Listas de Configurações */
+.config-list,
+.config-support {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.config-list li,
+.config-support li {
+    margin-bottom: 15px;
+    background-color: #0a9396; /* Cor de fundo das opções */
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra nas opções */
+}
+
+.config-list li:hover,
+.config-support li:hover {
+    background-color: #94d2bd; /* Cor ao passar o mouse */
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+}
+
+.config-list a,
+.config-support a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.config-list a:hover,
+.config-support a:hover {
+    color: #023047;
+}
+
+/* Linha Divisora */
+.divisor {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ffffff;
+}
+
+/* Logout button */
+.logout {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: #d32f2f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra no botão de sair */
+}
+
+.logout:hover {
+    background-color: #b71c1c;
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .configuracoes {
+        padding: 20px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+
+    .config-list a,
+    .config-support a {
+        font-size: 16px;
+    }
+}

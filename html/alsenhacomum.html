@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Senha - Recruta IA</title>
+    <link rel="stylesheet" href="../css/alsenhacomum.css">
+</head>
+<body>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+
+    <!-- Main Content -->
+    <section class="trocar-senha">
+        <h2>Trocar senha</h2>
+
+        <!-- Form for Password Change -->
+        <form action="javascript:void(0);" class="form-trocar-senha" id="passwordForm">
+            <div class="form-group">
+                <label for="current-password">Senha atual</label>
+                <div class="input-wrapper">
+                    <input type="password" id="current-password" placeholder="**********">
+                    <span class="toggle-password">👁</span>
+                </div>
+                <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+            </div>
+
+            <div class="form-group">
+                <label for="new-password">Nova senha</label>
+                <div class="input-wrapper">
+                    <input type="password" id="new-password" placeholder="**********">
+                    <span class="toggle-password">👁</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirmar senha</label>
+                <div class="input-wrapper">
+                    <input type="password" id="confirm-password" placeholder="**********">
+                    <span class="toggle-password">👁</span>
+                </div>
+            </div>
+
+            <button type="submit" class="save-button">Salvar</button>
+        </form>
+
+        <!-- Success message placeholder -->
+        <div id="success-message" style="display:none; margin-top: 20px; color: #00FF00;">
+            Senha alterada com sucesso!
+        </div>
+    </section>
+
+    <script src="../java/alsenhacomum.js"></script>
+</body>
+</html>

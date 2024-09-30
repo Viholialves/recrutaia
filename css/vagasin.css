@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D354B;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+}
+
+.back-button {
+    align-self: flex-start;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.logo {
+    max-width: 250px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vagas-area {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.input-group input,
+.input-group select {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background: transparent;
+    appearance: none; /* Remove o estilo padrão do select */
+}
+
+.input-group select {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.input-group select option {
+    color: #333;
+}
+
+.next-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b00e0;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.next-button:hover {
+    background-color: #3700b3;
+}

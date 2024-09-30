@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1898dd;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Usar min-height ao invés de height para evitar problemas de redimensionamento */
+    width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;  /* Impede a rolagem horizontal */
+}
+
+.full-screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;  /* Mudança de row para column para deixar o layout mais fluido */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima do container */
+    margin: 20px 0;
+}
+
+.welcome-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+    color: #ffffff;
+    width: 100%; /* O texto agora ocupa 100% da largura disponível */
+    max-width: 800px; /* Limita a largura máxima do texto */
+    text-align: left;
+}
+
+.accessibility-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.libras-video {
+    max-width: 45%; /* Ajusta para ocupar menos da metade da área */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.next-button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #ffffff;
+    color: #073bb5;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}

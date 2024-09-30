@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta Acessível - Integração</title>
+    <link rel="stylesheet" href="../css/integra.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Botão de Voltar com Ícone -->
+        <a href="cadastro.html" class="back-button">← Voltar</a>
+
+        <!-- Imagem com Logo -->
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="logo">
+
+        <!-- Área de Integração -->
+        <div class="integracao-area">
+            <h2>Integração <span class="audio-icon" onclick="speakText('Tela de Integração')">🔊</span></h2>
+
+            <!-- Formulário de Integração -->
+            <form>
+                <!-- Campos do formulário -->
+                <div class="input-group">
+                   
+                    <select id="pais" name="pais">
+                        <option value="" disabled selected>Escolha seu país</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="EUA">EUA</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <span class="audio-icon" onclick="speakText('Escolha seu país')">🔊</span>
+                </div>
+                <div class="input-group">
+    
+                    <input type="text" id="cidade" placeholder="Digite sua cidade" aria-label="Cidade">
+                    <span class="audio-icon" onclick="speakText('Digite sua cidade')">🔊</span>
+                </div>
+                <div class="input-group">
+            
+                    <input type="text" id="formacao" placeholder="Digite sua formação acadêmica" aria-label="Formação acadêmica">
+                    <span class="audio-icon" onclick="speakText('Digite sua formação acadêmica')">🔊</span>
+                </div>
+                <div class="input-group">
+                
+                    <input type="text" id="cpf" placeholder="Digite seu CPF" aria-label="CPF">
+                    <span class="audio-icon" onclick="speakText('Digite seu CPF')">🔊</span>
+                </div>
+                <div class="input-group">
+                
+                    <select id="idiomas" name="idiomas">
+                        <option value="" disabled selected>Escolha seu idioma</option>
+                        <option value="Português">Português</option>
+                        <option value="Inglês">Inglês</option>
+                        <option value="Espanhol">Espanhol</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <span class="audio-icon" onclick="speakText('Escolha seu idioma')">🔊</span>
+                </div>
+                <div class="input-group">
+                    
+                    <select id="area-interesse" name="area-interesse">
+                        <option value="" disabled selected>Escolha sua área de interesse</option>
+                        <option value="Tecnologia">Tecnologia</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                    <span class="audio-icon" onclick="speakText('Escolha sua área de interesse')">🔊</span>
+                </div>
+                <div class="input-group">
+                   
+                    <input type="text" id="referencia" placeholder="Digite a referência (quem indicou)" aria-label="Referência">
+                    <span class="audio-icon" onclick="speakText('Digite a referência quem indicou')">🔊</span>
+                </div>
+                <div class="input-group">
+                   
+                    <select id="preferencia-pagamento" name="preferencia-pagamento">
+                        <option value="" disabled selected>Escolha sua preferência de pagamento</option>
+                        <option value="Cartão de Crédito">Cartão de Crédito</option>
+                        <option value="Boleto Bancário">Boleto Bancário</option>
+                        <option value="Pix">Pix</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                    <span class="audio-icon" onclick="speakText('Escolha sua preferência de pagamento')">🔊</span>
+                </div>
+
+                <!-- Botão Próximo -->
+                <div class="button-group">
+                    <button type="button" class="next-button" onclick="window.location.href='./vagasin.html'">Próximo</button>
+                    <span class="audio-icon" onclick="speakText('Próximo')">🔊</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Função para sintetizar a voz dos textos
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>

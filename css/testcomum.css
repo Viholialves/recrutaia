@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0D354B;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Para evitar corte no topo */
+}
+
+/* Main content container */
+.container {
+    width: 80%;
+    margin: 20px;
+    padding-top: 20px; /* Adicionando padding para evitar corte no topo */
+    overflow: auto;
+    background-color: #1B4965;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center; /* Centralizar o título */
+}
+
+/* Form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Submit button */
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #6200EE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #3700B3;
+}
+
+/* Back button styling */
+.back-button {
+    background-color: #017BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #005BB5;
+}
+
+/* Resultado do teste DISC */
+.resultado-disc {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resultado-disc h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.resultado-disc p {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+    }
+
+    .back-button {
+        font-size: 14px;
+    }
+}

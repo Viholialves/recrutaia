@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste DISC - Recruta IA</title>
+    <link rel="stylesheet" href="../css/testcomum.css">
+</head>
+<body>
+
+    <!-- Botão de Voltar -->
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+
+    <!-- Container do Teste DISC -->
+    <section class="container">
+        <h2>Teste DISC</h2>
+
+        <!-- Explicação do Teste -->
+        <div class="disc-description">
+            <p>
+                Responda ao teste a seguir para entender melhor seu perfil comportamental. Ao concluir, você terá uma análise de como seu comportamento reflete em ambientes de trabalho e como pode se destacar.
+            </p>
+        </div>
+
+        <!-- Formulário DISC -->
+        <form class="disc-form" id="discForm">
+            <!-- Perguntas sem os títulos -->
+            <div class="form-group">
+                <label for="pergunta1">Você assume o controle em situações desafiadoras?</label>
+                <select id="pergunta1" name="pergunta1">
+                    <option value="alta">Alta</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pergunta2">Você é firme ao tomar decisões, mesmo sob pressão?</label>
+                <select id="pergunta2" name="pergunta2">
+                    <option value="alta">Alta</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pergunta3">Você gosta de influenciar outras pessoas e trabalhar em grupo?</label>
+                <select id="pergunta3" name="pergunta3">
+                    <option value="alta">Alta</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pergunta4">Você se sente confortável ao conversar com pessoas desconhecidas?</label>
+                <select id="pergunta4" name="pergunta4">
+                    <option value="alta">Alta</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pergunta5">Você prefere um ambiente de trabalho tranquilo e estável?</label>
+                <select id="pergunta5" name="pergunta5">
+                    <option value="alta">Alta</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pergunta6">Você tende a se manter calmo em situações de conflito?</label>
+                <select id="pergunta6" name="pergunta6">
+                    <option value="alta">Alta</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pergunta7">Você prefere seguir regras e procedimentos estabelecidos?</label>
+                <select id="pergunta7" name="pergunta7">
+                    <option value="alta">Alta</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pergunta8">Você se preocupa em evitar riscos e prefere agir com cautela?</label>
+                <select id="pergunta8" name="pergunta8">
+                    <option value="alta">Alta</option>
+                    <option value="moderada">Moderada</option>
+                    <option value="baixa">Baixa</option>
+                </select>
+            </div>
+
+            <!-- Botão de Enviar -->
+            <button type="submit" class="submit-button">Ver Resultado</button>
+        </form>
+
+        <!-- Resultado do Teste -->
+        <div id="resultado" class="resultado-disc" style="display: none;">
+            <h3>Resultado do Teste DISC:</h3>
+            <p id="resultado-texto"></p>
+        </div>
+    </section>
+
+    <!-- JavaScript para o resultado do teste -->
+    <script>
+        document.getElementById('discForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const pergunta1 = document.getElementById('pergunta1').value;
+            const pergunta2 = document.getElementById('pergunta2').value;
+            const pergunta3 = document.getElementById('pergunta3').value;
+            const pergunta4 = document.getElementById('pergunta4').value;
+            const pergunta5 = document.getElementById('pergunta5').value;
+            const pergunta6 = document.getElementById('pergunta6').value;
+            const pergunta7 = document.getElementById('pergunta7').value;
+            const pergunta8 = document.getElementById('pergunta8').value;
+
+            const resultado = `Seu perfil comportamental é composto por:
+            - Controle: ${(pergunta1 === 'alta' || pergunta2 === 'alta') ? 'Alta' : 'Moderada/baixa'}
+            - Comunicação: ${(pergunta3 === 'alta' || pergunta4 === 'alta') ? 'Alta' : 'Moderada/baixa'}
+            - Estabilidade: ${(pergunta5 === 'alta' || pergunta6 === 'alta') ? 'Alta' : 'Moderada/baixa'}
+            - Cautela: ${(pergunta7 === 'alta' || pergunta8 === 'alta') ? 'Alta' : 'Moderada/baixa'}`;
+
+            document.getElementById('resultado-texto').innerText = resultado;
+            document.getElementById('resultado').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* Estilo do body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #12232e, #203647);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+    height: 100vh;
+    position: relative;
+    overflow-y: auto; /* Habilitar scroll quando necessário */
+}
+
+/* Caixa de Política */
+.policy-box {
+    background-color: #2983B5;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 20px; /* Adiciona espaçamento no topo */
+}
+
+.policy-box h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.policy-box h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.policy-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.policy-box ul {
+    padding-left: 20px;
+}
+
+.policy-box ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #00BFA6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botão Voltar */
+.back-button {
+    background-color: #12232e;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    background-color: #203647;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruta Acessível - Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Botão de Voltar -->
+        <a href="../html/login.html" class="back-button">← Voltar para o login</a>
+        
+
+        <!-- Imagem com Logo -->
+        <img src="../img-video/logo.png" alt="Recruta Acessível ao Trabalho" class="logo">
+
+        <!-- Área de Cadastro -->
+        <div class="cadastro-area">
+            <h2>Cadastro <span class="audio-icon" onclick="speakText('Cadastro')">🔊</span></h2>
+
+            <!-- Formulário de Cadastro -->
+            <form>
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome" aria-label="Nome">
+                    <span class="audio-icon" onclick="speakText('Digite seu nome')">🔊</span>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Digite seu email" aria-label="Email">
+                    <span class="audio-icon" onclick="speakText('Digite seu email')">🔊</span>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" aria-label="Senha">
+                    <span class="audio-icon" onclick="speakText('Digite sua senha')">🔊</span>
+                </div>
+                <div class="input-group">
+                    <label for="repita-senha">Repita a Senha:</label>
+                    <input type="password" id="repita-senha" placeholder="Repita sua senha" aria-label="Repita a senha">
+                    <span class="audio-icon" onclick="speakText('Repita sua senha')">🔊</span>
+                </div>
+
+                <!-- Botão Próximo -->
+                <button type="button" class="next-button" onclick="window.location.href='./trabalhos.html'">Próximo</button>
+                <span class="audio-icon" onclick="speakText('Próximo')">🔊</span>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Função para sintetizar a voz dos textos
+        function speakText(text) {
+            const synth = window.speechSynthesis;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'pt-BR'; // Configura o idioma para português do Brasil
+            synth.speak(utterance);
+        }
+    </script>
+</body>
+
+</html>
